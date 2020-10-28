@@ -7,7 +7,8 @@ To help structure your work, here are 22 challenges. They all build on one anoth
 ## Link ##
 https://github.com/makersacademy/course/blob/master/boris_bikes/0_challenge_map.md
 ```shell
-boris_bikes.rb
+lib/boris_bikes.rb
+spec/boris_bikes_spec.rb
 ```
 
-## Josh is working now ##
+## User Story ##
