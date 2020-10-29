@@ -12,3 +12,8 @@ spec/boris_bikes_spec.rb
 ```
 
 ## User Story ##
+| Objects         | Messages     | 
+| :------------   | :----------: | 
+| Person.         |              | 
+| Bike.           | Working?     | 
+| DockingStation  | Release_Bike | 
