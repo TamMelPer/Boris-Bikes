@@ -12,9 +12,17 @@ describe DockingStation do
       end
     end
 
+# i need to change this test and i think it needs to say
+# it doesnt accept a bike as it is full
+# bike = Bike.new
+# subject.dock_bike(bike)
+# expect subject.dock_bike to raise error 'full'
+
     describe "#dock_bike" do
-      it "docks the bike at the docking station" do
-        expect(subject).to respond_to(:dock_bike)
+      it "raises an error when the station is full" do
+        bike = Bike.new
+        subject.dock_bike(bike)
+        expect { subject.dock_bike Bike.new }.to raise_error 'Docking Station Full'
       end
     end
 
