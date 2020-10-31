@@ -20,20 +20,19 @@ describe DockingStation do
 
     describe "#dock_bike" do
       it "raises an error when the station is full" do
-        bike = Bike.new
-        subject.dock_bike(bike)
+        20.times { subject.dock_bike Bike.new }
         expect { subject.dock_bike Bike.new }.to raise_error 'Docking Station Full'
       end
     end
 
-  describe "#bike" do
-    it "Enables the user to see the docked bike" do
-      expect(subject).to respond_to(:bike)
-      bike = Bike.new
-      subject.dock_bike(bike)
-      expect(subject.bike).to eq bike
-    end
-  end
+  # describe "#bike" do
+  #   it "Enables the user to see the docked bike" do
+  #     expect(subject).to respond_to(:bike)
+  #     bike = Bike.new
+  #     subject.dock_bike(bike)
+  #     expect(subject.bike).to eq bike
+  #   end
+  # end
 end
 
 describe Bike do
